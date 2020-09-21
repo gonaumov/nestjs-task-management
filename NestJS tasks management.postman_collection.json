@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "c2f1bf71-ba5a-459c-a523-769310e20064",
+		"name": "NestJS tasks management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all tasks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create task",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "title",
+							"value": "Test title",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Test description",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get task by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tasks/e5c65400-fb35-11ea-a912-a7b74ab6c7ca",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"e5c65400-fb35-11ea-a912-a7b74ab6c7ca"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete task",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/tasks/12abe220-fb3e-11ea-a671-8fb51e3df6f1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"12abe220-fb3e-11ea-a671-8fb51e3df6f1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update task status",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "status",
+							"value": "IN_PROGRESS",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/tasks/0cb4c070-fb71-11ea-baaf-713418abbcd9/status",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"tasks",
+						"0cb4c070-fb71-11ea-baaf-713418abbcd9",
+						"status"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
