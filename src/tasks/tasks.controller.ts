@@ -37,11 +37,11 @@ export class TasksController {
     return this.taskService.getTaskById(id);
   }
   //
-  // @Delete('/:id')
-  // deleteTask(@Param('id') id: string): void {
-  //   return this.taskService.deleteTask(id);
-  // }
-  //
+  @Delete('/:id')
+  deleteTask(@Param('id', ParseIntPipe) id: number): Promise<number> {
+     return this.taskService.deleteTask(id);
+  }
+
   @Post()
   @UsePipes(ValidationPipe)
   createTask(@Body() createTaskDto: CreateTaskDto): Promise<Task> {
