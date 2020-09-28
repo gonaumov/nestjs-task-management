@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "c2f1bf71-ba5a-459c-a523-769310e20064",
+		"_postman_id": "1a2fa7b3-9963-4d35-933f-8b534f9c3179",
 		"name": "NestJS tasks management",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -124,6 +124,61 @@
 						"tasks",
 						"0cb4c070-fb71-11ea-baaf-713418abbcd9",
 						"status"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/auth/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Ariel",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "parolaN1@2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:3000/auth/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"signin"
 					]
 				}
 			},
