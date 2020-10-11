@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "1a2fa7b3-9963-4d35-933f-8b534f9c3179",
+		"_postman_id": "43ed2b82-bbc6-4e4b-a073-e0f1d9907829",
 		"name": "NestJS tasks management",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -159,18 +159,18 @@
 					"urlencoded": [
 						{
 							"key": "username",
-							"value": "Ariel",
+							"value": "Evgeni1",
 							"type": "text"
 						},
 						{
 							"key": "password",
-							"value": "parolaN1@2",
+							"value": "Minchev@123",
 							"type": "text"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://localhost:3000/auth/signin",
+					"raw": "http://localhost:3000/auth/signin?username",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -179,6 +179,12 @@
 					"path": [
 						"auth",
 						"signin"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": null
+						}
 					]
 				}
 			},
